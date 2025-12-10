@@ -237,7 +237,7 @@ def estimate(Xs, Ys, regularizer='models.AECross',
 
         # make nan array
         estimate = np.zeros(len(Xs))
-        estimate += np.NaN
+        estimate += np.nan
 
         # fill val pMIs
         estimate[indices[N_train:]] = ksg.mi(Zx.cpu()[indices[N_train:]], 
